@@ -35,4 +35,15 @@ fun main()
 
     var nameSurname: String = "$name $surname ${20+5}" // String interpolation (Değişkenleri string içinde kullanmak)
     println(nameSurname)
+
+
+    // Array => Diziler
+    val numbers: Array<Int> = arrayOf(1,2,3,4,5)
+
+    val students: Array<String> = arrayOf("Halit","Ahmet","Mehmet")
+
+    println(numbers[0]) // Index bazlı erişim
+    println(students[2])
+    students[2] = "Ayşe"
+    println(students[2])
 }
