@@ -41,9 +41,24 @@ fun main()
     val numbers: Array<Int> = arrayOf(1,2,3,4,5)
 
     val students: Array<String> = arrayOf("Halit","Ahmet","Mehmet")
+    //students.add("Ayşe") // Arrayler sabit boyutlu olduğu için add gibi bir fonksiyon yoktur.
 
     println(numbers[0]) // Index bazlı erişim
     println(students[2])
     students[2] = "Ayşe"
     println(students[2])
+
+    // Listeler => Arraylere göre daha esnek ve gelişmiş yapılardır.
+
+    // liste@456 = 1,2,3,4,5
+    val numberList = listOf(1,2,3,4,5) // Immutable (değiştirilemez)
+    //numberList.add(6)
+
+    // liste@123 => 1,2,3,4,5
+    val numberListMutable = mutableListOf(1,2,3,4,5) // Mutable (değiştirilebilir)
+    numberListMutable.add(6)
+
+    // Referans değişir , neden => yeni liste oluşur liste@789
+    //numberListMutable = mutableListOf(7,8,9) // Yeni bir liste ataması yapabiliriz.
+
 }
