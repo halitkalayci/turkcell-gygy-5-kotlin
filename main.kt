@@ -29,4 +29,10 @@ fun main()
     var surname: String? = "Kalaycı"
     surname = null
     println(surname)
+    println(surname?.length) // Güvenli kullanım (Nullsa yine null döner.)
+    //println(surname!!.length) // Kullanıma zorlamak (NullPointerException riski)
+
+
+    var nameSurname: String = "$name $surname ${20+5}" // String interpolation (Değişkenleri string içinde kullanmak)
+    println(nameSurname)
 }
