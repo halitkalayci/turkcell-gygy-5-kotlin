@@ -21,6 +21,12 @@ fun main()
 
     a = 6
     println(a)
-    b=11
+    //b=11
     println(b)
+
+    // Null Safety = Varsayılan davranış non-nullable'dır. Yani null değer atanamaz.
+    // ? => Bu alan null olabilir.
+    var surname: String? = "Kalaycı"
+    surname = null
+    println(surname)
 }
