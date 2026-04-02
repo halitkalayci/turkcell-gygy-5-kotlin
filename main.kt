@@ -61,4 +61,57 @@ fun main()
     // Referans değişir , neden => yeni liste oluşur liste@789
     //numberListMutable = mutableListOf(7,8,9) // Yeni bir liste ataması yapabiliriz.
 
+
+    // Control Flow
+    println(10+20)
+
+    println(10 == 20)
+
+    val yas: Int = 18
+    // Bir if bloğundan bir karar çıkar
+    // ilk sağlanan koşul (yukarıdan aşağıya) çalışır.
+    if (yas >= 18) 
+    {
+        println("Yetki verildi.")
+    }
+    else if(yas == 18)
+    {
+        println("Ay kontrolü yapılıyor.")
+    }
+    else
+    {
+        println("Yetki verilmedi.")
+    }
+    //
+
+    // when (switch-case) 
+    val gun: Int = 3
+
+    when(gun)
+    {
+        1 -> println("Pazartesi")
+        2 -> println("Salı")
+        3 -> println("Carsamba")
+        else -> println("Geçersiz gün")
+    }
+
+    when(gun)
+    {
+        1,2,3,4,5 -> println("Hafta içi")
+        6,7 -> println("Hafta sonu")
+        else -> println("Geçersiz gün")
+    }
+    //
+
+    // Koşullar aynı zamanda birer expressiondır.
+    val sonuc: String = if (yas >= 18) "Yetki verildi" else "Yetki verilmedi"
+
+    val gunIsmi: String = when(gun)
+    {
+        1 -> "Pazartesi"
+        2 -> "Salı"
+        3 -> "Carsamba"
+        else -> "Geçersiz gün"
+    }
+    //
 }
