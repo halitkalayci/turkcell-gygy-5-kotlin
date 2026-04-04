@@ -128,15 +128,37 @@ fun main()
     for(i in 0..20 step 2) {
         println(i)
     }
-    
+    println("**** DownTo ****")
     for(i in 10 downTo 0) {
         println(i)
     }
     // until 0dan5e kadar 5 dahil değil
     // 0..5 => 5 dahil olur
+    println("**** Until ****")
     for(i in 0 until 5) {
         println(i)
     }
     // döngüden çıkılacak i=6
 
+    val studentList = listOf("Halit","Ahmet","Mehmet","Nazlı","İsmail","Eren") 
+
+    for(student in studentList) { // studentList içindeki her elemanı gez, her iterasyonda sıradaki elemana student ismiyle ulaş.
+        // her bir çalışma => buradaki student isimli değişkenin farklı değerler alması
+
+        // BU döngüde yapılacak işlem ne ise "Ahmet" ismi için yapılmasın..
+        // continue => döngünün o iterasyonunu continue gördüğün yerde atla.
+        if(student == "Ahmet")
+            continue
+        println(student)
+    }
+    println("*** Break ***")
+    for(student in studentList) { 
+        
+        if(student == "Ahmet")
+        {
+            println("Ahmet bulundu, döngü sonlandırılıyor.")
+            break // döngüyü tamamen sonlandır.
+        }
+        println(student)
+    }
 }
