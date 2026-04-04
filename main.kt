@@ -114,4 +114,29 @@ fun main()
         else -> "Geçersiz gün"
     }
     //
+
+
+    // Iterasyon -> iteration => yineleme
+    // aynı scopedaki kodu X adet tekrar etmek
+
+    // for döngüsü
+    // döngü koşulu sağlandığı sürece döngü bloğundaki kodu tekrar eder.
+    for (i in 0..5) { // i sayısı 1 ile 5 arasında iterasyon yapsın. 1den başlasın 5 dahil 5e kadar çıskın
+        println(i)
+    }
+
+    for(i in 0..20 step 2) {
+        println(i)
+    }
+    
+    for(i in 10 downTo 0) {
+        println(i)
+    }
+    // until 0dan5e kadar 5 dahil değil
+    // 0..5 => 5 dahil olur
+    for(i in 0 until 5) {
+        println(i)
+    }
+    // döngüden çıkılacak i=6
+
 }
