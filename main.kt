@@ -161,4 +161,7 @@ fun main()
         }
         println(student)
     }
+
+
+    // Arabayla ilgili işlem..
 }
